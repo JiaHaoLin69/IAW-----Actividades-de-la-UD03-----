@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(210, 221, 216);
+}
+.h2-titulo {
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.cartas {
+  display: flex;
+  justify-content: center;
+}
+h3 {
+  color: #a0a0ff; 
+}
+.app-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.main-content {
+  display: flex;
+  flex-direction: column; 
+  gap: 20px;
+}
+
+.header {
+  position: relative; 
+  height: 250px;
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-image: linear-gradient(rgba(77, 191, 109, 0.5), #89ff9c80),url('../public/curavalera.jpg');
+  background-size: cover/center no-repeat;
+  .header-texto {
+    position: relative;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgb(252, 252, 252);
+    h1 {
+      color: rgb(56, 33, 33); 
+      font-size: 2.5em; 
+    }
+  }
+}
+
+.navbar-simple {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #087a30;
+  padding: 15px;
+  margin-bottom: 20px;
+  a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.1em;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 8px 12px;
+    transition: background-color 0.2s;
+      &:hover {
+          background-color: #535bf2;
+          color: black;
+      }
+}
+}
+.noticias{
+  background-color: #087a30;
+}
+.page-404 {
+  text-align: center;
+}

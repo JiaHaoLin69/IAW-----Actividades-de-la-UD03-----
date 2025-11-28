@@ -18,7 +18,6 @@ return (
 }
 
 function MySkills() {
-//Lectura del parámetro de la URL
 const params = useParams();
 return <h2 className="parametro">Parámetro introducido: {params.nombre}</h2>;
 }
