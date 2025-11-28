@@ -1,4 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, useParams } from "react-router-dom";
+import { IoIosWoman } from "react-icons/io";
+import { IoIosMan } from "react-icons/io";
 import { Navbar } from "./navbar";
 import Home from "./home";
 import About from "./about";
@@ -19,7 +21,13 @@ return (
 
 function MySkills() {
 const params = useParams();
-return <h2 className="parametro">Parámetro introducido: {params.nombre}</h2>;
+  if (params.nombre === 'Marisa') {
+      return <h1><IoIosWoman /> Bienvenida a la página de {params.nombre}</h1>;
+  }
+
+ if (params.nombre === 'Juan') {
+      return <h1><IoIosMan /> Bienvenido a la página de {params.nombre} </h1>;
+  }
 }
 
 function NoPage() {
