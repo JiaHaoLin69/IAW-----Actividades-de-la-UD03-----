@@ -20,13 +20,14 @@ return (
 }
 
 function MySkills() {
+
 const params = useParams();
   if (params.nombre === 'Marisa') {
-      return <h1><IoIosWoman /> Bienvenida a la página de {params.nombre}</h1>;
+      return <h1 className="parametro"><IoIosWoman /> Bienvenida a la página de {params.nombre}</h1>;
   }
 
  if (params.nombre === 'Juan') {
-      return <h1><IoIosMan /> Bienvenido a la página de {params.nombre} </h1>;
+      return <h1 className="parametro"><IoIosMan /> Bienvenido a la página de {params.nombre} </h1>;
   }
 }
 
